@@ -11,7 +11,23 @@
 </head>
 <body>
 
+  <div class="header">
+  <div class="container">
+		<div class="row">
+			<div class="menu col-xs-8">
+				<ul> <li><%= link_to 'Welcome', welcome_path %></li> <li><%= link_to 'Portfolio', portfolio_path %></li> <li><a href="https://medium.com/about-codecademy">Blog</a></li> <li><a href="about">About</a></li> <li><a href="contact">Contact</a></li> </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
 <%= yield %>
 
+  <div class="footer">
+  <div class="container">
+    <ul class="social_media"> <li><a class="github" href="#">github</a></li> <li><a class="linkedin" href="#">linkedin</a></li> <li><a class="twitter" href="#">twitter</a></li> </ul>
+  </div>
+</div>
+  
 </body>
 </html>
